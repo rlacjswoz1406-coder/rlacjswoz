@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
           {/* 로고 및 설명 */}
           <div className="text-center md:text-left">
-            <h2 className="text-lg font-bold text-slate-900">EduApp</h2>
+            <h2 className="text-lg font-bold text-slate-900">민호쌤 수학교실</h2>
             <p className="mt-2 text-sm text-slate-500">
               미래를 만드는 교육용 웹앱 솔루션
             </p>
@@ -32,7 +32,7 @@ export default function Footer() {
 
         <div className="mt-8 border-t border-slate-200 pt-8 text-center flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-slate-500">
-            &copy; {currentYear} EduApp. All rights reserved.
+            &copy; {currentYear} 민호쌤 수학교실. All rights reserved.
           </p>
           <div className="flex gap-4">
             <a href="#" className="text-sm text-slate-500 hover:text-indigo-600 transition-colors">이용약관</a>

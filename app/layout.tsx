@@ -7,7 +7,7 @@ import Footer from '@/components/Footer';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'EduApp - 나만의 교육용 웹앱 만들기',
+  title: '민호쌤 수학교실 - 나만의 교육용 웹앱 만들기',
   description: '선생님과 학생을 위한 최고의 교육 플랫폼 뼈대',
 };
 

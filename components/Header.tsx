@@ -23,7 +23,7 @@ export default function Header() {
             <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600 text-white">
               <BookOpen size={24} />
             </div>
-            <span className="text-xl font-bold tracking-tight text-slate-900">EduApp</span>
+            <span className="text-xl font-bold tracking-tight text-slate-900">민호쌤 수학교실</span>
           </Link>
         </div>
 

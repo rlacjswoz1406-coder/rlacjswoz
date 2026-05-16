@@ -67,7 +67,7 @@ export default function Home() {
                 지금 바로 교육 혁신을 시작하세요
               </h2>
               <p className="text-indigo-100 text-lg mb-10 max-w-2xl mx-auto">
-                더 나은 교육 환경을 만들기 위한 첫걸음, EduApp과 함께라면 어렵지 않습니다.
+                더 나은 교육 환경을 만들기 위한 첫걸음, 민호쌤 수학교실과 함께라면 어렵지 않습니다.
               </p>
               <div className="flex flex-wrap items-center justify-center gap-4">
                 <button className="bg-white text-indigo-600 px-8 py-4 rounded-xl font-bold text-lg hover:bg-indigo-50 transition-all active:scale-95 shadow-lg">
