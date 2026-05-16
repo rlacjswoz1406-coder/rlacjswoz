@@ -11,7 +11,7 @@ export default function Header() {
     { name: '홈', href: '/' },
     { name: '게임', href: '#' },
     { name: '방명록', href: '#guestbook' },
-    { name: '문의하기', href: '#' },
+    { name: '수업도구', href: '#' },
   ];
 
   return (
@@ -48,7 +48,7 @@ export default function Header() {
           <button className="hidden md:block text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors">
             로그인
           </button>
-          
+
           <div className="flex md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
