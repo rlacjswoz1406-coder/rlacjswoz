@@ -16,8 +16,6 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* 여기에 새로운 링크 그룹을 추가하세요 */}
-
           {/* SNS 및 연락처 */}
           <div className="flex gap-4">
             <a href="#" className="text-slate-400 hover:text-indigo-600 transition-colors">
@@ -32,12 +30,13 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-8 border-t border-slate-200 pt-8 text-center">
+        <div className="mt-8 border-t border-slate-200 pt-8 text-center flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-slate-500">
             &copy; {currentYear} EduApp. All rights reserved.
           </p>
-            <a href="#" className="hover:text-blue-600 transition-colors">개인정보처리방침</a>
-            {/* 여기에 새로운 푸터 링크를 추가하세요 */}
+          <div className="flex gap-4">
+            <a href="#" className="text-sm text-slate-500 hover:text-indigo-600 transition-colors">이용약관</a>
+            <a href="#" className="text-sm text-slate-500 hover:text-indigo-600 transition-colors">개인정보처리방침</a>
           </div>
         </div>
       </div>
