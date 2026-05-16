@@ -11,7 +11,7 @@ export default function Header() {
     { name: '홈', href: '/' },
     { name: '게임', href: '#' },
     { name: '방명록', href: '#guestbook' },
-    { name: '수업도구', href: '#' },
+    { name: '수업도구', href: '#chat' },
   ];
 
   return (

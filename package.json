@@ -16,7 +16,9 @@
     "next": "14.2.3",
     "lucide-react": "^0.378.0",
     "drizzle-orm": "^0.30.10",
-    "@neondatabase/serverless": "^0.9.3"
+    "@neondatabase/serverless": "^0.9.3",
+    "openai": "^4.52.0",
+    "ai": "^3.1.37"
   },
   "devDependencies": {
     "typescript": "^5",

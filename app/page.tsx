@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import Hero from '@/components/Hero';
 import Guestbook from '@/components/Guestbook';
+import MathChat from '@/components/MathChat';
 import { getMessages } from '@/app/actions/guestbook';
 import { Book, Users, Zap } from 'lucide-react';
 
@@ -62,6 +63,9 @@ export default async function Home() {
 
       {/* 방명록 섹션 */}
       <Guestbook messages={messages} />
+
+      {/* AI 선생님 섹션 */}
+      <MathChat />
 
       {/* CTA 섹션 */}
       <section className="py-20 relative overflow-hidden">
