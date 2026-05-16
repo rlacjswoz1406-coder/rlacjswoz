@@ -6,13 +6,17 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "db:push": "drizzle-kit push",
+    "db:studio": "drizzle-kit studio"
   },
   "dependencies": {
     "react": "^18",
     "react-dom": "^18",
     "next": "14.2.3",
-    "lucide-react": "^0.378.0"
+    "lucide-react": "^0.378.0",
+    "drizzle-orm": "^0.30.10",
+    "@neondatabase/serverless": "^0.9.3"
   },
   "devDependencies": {
     "typescript": "^5",
@@ -23,6 +27,8 @@
     "tailwindcss": "^3.4.1",
     "autoprefixer": "^10.4.19",
     "eslint": "^8",
-    "eslint-config-next": "14.2.3"
+    "eslint-config-next": "14.2.3",
+    "drizzle-kit": "^0.21.4",
+    "dotenv": "^16.4.5"
   }
 }
