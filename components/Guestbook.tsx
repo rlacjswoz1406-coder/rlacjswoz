@@ -15,7 +15,7 @@ export default function Guestbook({ messages }: { messages: Message[] }) {
   const formRef = useRef<HTMLFormElement>(null);
 
   return (
-    <section className="py-16 bg-white">
+    <section id="guestbook" className="py-16 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
         <div className="text-center mb-12">
           <div className="inline-flex items-center gap-2 rounded-full bg-indigo-50 px-4 py-1.5 text-sm font-medium text-indigo-600 mb-4">

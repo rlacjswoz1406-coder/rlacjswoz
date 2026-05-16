@@ -10,6 +10,7 @@ export default function Header() {
   const navItems = [
     { name: '홈', href: '/' },
     { name: '강의', href: '#' },
+    { name: '방명록', href: '#guestbook' },
     { name: '커뮤니티', href: '#' },
     { name: '문의하기', href: '#' },
   ];

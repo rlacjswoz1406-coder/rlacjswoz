@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 import { ArrowRight, Sparkles } from 'lucide-react';
 
 export default function Hero() {
@@ -33,12 +34,10 @@ export default function Hero() {
 
           {/* 가짜(Placeholder) 버튼 */}
           <div className="mt-10 flex items-center justify-center gap-x-6">
-            <button className="btn-primary flex items-center gap-2">
-              체험하기
+            <Link href="#guestbook" className="btn-primary flex items-center gap-2">
+              방명록 남기기
               <ArrowRight size={18} />
-            </button>
-            
-            {/* 여기에 새로운 액션 버튼을 추가하세요 */}
+            </Link>
             
             <button className="text-sm font-semibold leading-6 text-slate-900 hover:text-indigo-600 transition-colors">
               더 알아보기 <span aria-hidden="true">→</span>
