@@ -8,4 +8,10 @@ export const users = pgTable('users', {
   createdAt: timestamp('created_at').defaultNow().notNull(),
 });
 
-// 여기에 새로운 테이블 스키마를 추가하세요.
+// 방명록 메시지 테이블 정의
+export const guestbookMessages = pgTable('guestbook_messages', {
+  id: serial('id').primaryKey(),
+  name: text('name').notNull(),
+  content: text('content').notNull(),
+  createdAt: timestamp('created_at').defaultNow().notNull(),
+});

@@ -1,15 +1,20 @@
 import React from 'react';
 import Link from 'next/link';
 import Hero from '@/components/Hero';
+import Guestbook from '@/components/Guestbook';
+import { getMessages } from '@/app/actions/guestbook';
 import { Book, Users, Zap } from 'lucide-react';
 
-export default function Home() {
+export default async function Home() {
+  const messages = await getMessages();
+
   return (
     <div className="bg-white">
       {/* 메인 히어로 섹션 */}
       <Hero />
 
       {/* 특징 소개 섹션 */}
+      {/* ... 기존 내용 ... */}
       <section className="py-24 bg-slate-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -53,6 +58,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* 방명록 섹션 */}
+      <Guestbook messages={messages} />
 
       {/* CTA 섹션 */}
       <section className="py-20 relative overflow-hidden">
