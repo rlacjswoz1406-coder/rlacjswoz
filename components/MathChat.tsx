@@ -3,6 +3,10 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { askMathQuestion } from '@/app/actions/chat';
 import { Bot, User, Send, Loader2, Sparkles } from 'lucide-react';
+import ReactMarkdown from 'react-markdown';
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
+import 'katex/dist/katex.min.css';
 
 interface Message {
   role: 'user' | 'assistant';
@@ -91,12 +95,17 @@ export default function MathChat() {
                   }`}>
                     {msg.role === 'user' ? <User size={18} /> : <Bot size={18} />}
                   </div>
-                  <div className={`rounded-2xl px-4 py-2 text-sm shadow-sm ${
+                  <div className={`rounded-2xl px-4 py-2 text-sm shadow-sm prose prose-slate max-w-none ${
                     msg.role === 'user' 
-                      ? 'bg-indigo-600 text-white rounded-tr-none' 
+                      ? 'bg-indigo-600 text-white rounded-tr-none prose-invert' 
                       : 'bg-white text-slate-800 rounded-tl-none border border-slate-100'
                   }`}>
-                    {msg.content}
+                    <ReactMarkdown
+                      remarkPlugins={[remarkMath]}
+                      rehypePlugins={[rehypeKatex]}
+                    >
+                      {msg.content}
+                    </ReactMarkdown>
                   </div>
                 </div>
               </div>

@@ -18,7 +18,11 @@
     "drizzle-orm": "^0.30.10",
     "@neondatabase/serverless": "^0.9.3",
     "openai": "^4.52.0",
-    "ai": "^3.1.37"
+    "ai": "^3.1.37",
+    "react-markdown": "^9.0.1",
+    "remark-math": "^6.0.0",
+    "rehype-katex": "^7.0.0",
+    "katex": "^0.16.10"
   },
   "devDependencies": {
     "typescript": "^5",
