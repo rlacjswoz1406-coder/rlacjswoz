@@ -1,6 +1,3 @@
-'use client'; // This is a mistake, server actions should not have 'use client' at the top if defined in a separate file for use in server components, but usually they are 'use server'.
-// Actually, server actions file must start with 'use server'.
-
 'use server';
 
 import { db } from '@/lib/db';

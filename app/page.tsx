@@ -5,6 +5,8 @@ import Guestbook from '@/components/Guestbook';
 import { getMessages } from '@/app/actions/guestbook';
 import { Book, Users, Zap } from 'lucide-react';
 
+export const dynamic = 'force-dynamic';
+
 export default async function Home() {
   const messages = await getMessages();
 
@@ -14,7 +16,6 @@ export default async function Home() {
       <Hero />
 
       {/* 특징 소개 섹션 */}
-      {/* ... 기존 내용 ... */}
       <section className="py-24 bg-slate-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
